@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marko Bojkic HTML Uvod</title>
+
+    <!-- ! SEO koncepti (ovim se ne bavimo) -->
+
+    <meta name="description" content="Opis kursa za Junior Web developere">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Jquery">
+    <meta name="author" content="Marko Bojkić">
+</head>
+<body>
+
+    <!-- ! NASLOV komentar -->
+    <!-- ? INFORMACIJA komentar -->
+    <!-- * PRIMERI komentar -->
+    <!-- TODO - zadatak za vezbu -->
+
+    <!-- * Primeri otvarajuce-zatvarajucih tag-ova: -->
+    <h1>Naslov prvog časa!</h1>
+    <p>Neki paragraf</p>
+
+    <!-- * Primeri samo-zatvarajucih tag-ova: -->
+    <br>
+    <hr>
+    <input type="text">
+    <!-- * <hr/> moze i ovako sa slash-om -->
+    <!-- <img src="" alt=""> -->
+
+    <!-- * Primeri html atributa -->
+
+    <hr width="50px">
+    <hr width="50%">
+    <hr color="red">
+    <hr color="blue" width="50%" align="right">
+
+    <!-- * Primeri charset koriscenja -->
+
+    <br>
+    <br>
+
+    <h1>Charset sekcija</h1>
+
+    <h1>Марко Бојкић</h1>
+    <h1>Marko Bojkić</h1>
+
+    <br>
+    <br>
+
+    <!-- ! HEADING Tag -->
+
+    <!-- * Primeri heading tag-ova: -->
+
+    <h1>Heading sekcija</h1>
+
+    <h1>Neki naslov</h1>
+    <h2>Neki naslov</h2>
+    <h3>Neki naslov</h3>
+    <h4>Neki naslov</h4>
+    <h5>Neki naslov</h5>
+    <h6>Neki naslov</h6>
+
+    <br>
+    <br>
+
+    <h1>Paragraf sekcija</h1>
+
+    <!-- * Primeri paragrafa -->
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Pariatur error quos ad, illo numquam, voluptate quidem cum voluptatem expedita 
+        maxime eum est commodi, corporis laboriosam eius. Tenetur sequi sunt minus!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet <b>JAKO BITAN DEO TEKSTA.</b>
+        Debitis, quia. Ducimus placeat numquam error. Architecto eius minus 
+        illo ut voluptas distinctio alias soluta ratione quo atque, 
+        quidem delectus omnis. Enim. <i>NEKI ITALIC TEKST.</i>
+        <em>NEKI EM TEKST.</em>
+    </p>
+
+    <p>
+        Zbog situacije sa COVID virusom nastava se na fakultetu odrzava
+        <del>online</del> uzivo. 
+    </p>
+
+    <p>
+        <pre>
+            A function expression can be stored in a variable:
+            var x = function (a, b) {return a * b};
+            After a function expression has been stored in a variable,
+            the variable can be used as a function. Functions stored in variables
+            do not need function names. They are always invoked (called) using the
+            variable name.
+        </pre>
+    </p>
+
+    <p>
+        <code>
+            function helloWorld() {
+                <br>
+                    console.log('Hello World!');
+                <br>
+            }
+        </code>
+    </p>
+
+    <p>2<sup>2</sup>=4</p>
+
+    <p>Neki <sub>donji</sub> deo teksta.</p>
+
+    <br>
+    <br>
+
+    <!-- ! LISTE -->
+
+    <!-- ? Liste mogu: ul (unordered lista), ol (ordered lista), dl (definition lista)-->
+
+    <h1>Primeri lista</h1>
+
+    <!-- * Primeri unordered lista: -->
+
+    <ul type="disc"> 
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+
+    <ul type="square">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+
+    <ul type="circle">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+
+    <!-- * Primeri ordered lista: -->
+
+    <ol>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ol>
+
+    <ol type="A">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ol>
+
+    <ol type="a">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ol>
+
+    <ol type="I">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ol>
+
+    <ol type="i">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ol>
+
+    <!-- * Definition lista -> lista kod koje svaki item ima svoj naslov i svoj opis -->
+
+    <dl>
+        <dt>
+            Home
+        </dt>
+        <dd>
+            Početna strana naše web stranice.
+        </dd>
+        <dt>
+            Kontakt
+        </dt>
+        <dd>
+            Kontakt strana naše web stranice.
+        </dd>
+    </dl>
+
+    <br>
+    <br>
+
+    <!-- ! Dodavanje slika -->
+
+    <h1>Dodavanje slika</h1>
+
+    <img 
+        width="250px"
+        height="250px"
+        src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-jumbo-v4.jpg?quality=90&auto=webp" 
+        alt="Logo Twitter-a"
+    >
+
+    <br>
+
+    <img 
+        src="./assets/fb_logo.png" 
+        alt="Facebook Logo"
+    >
+
+    <a href="https://www.facebook.com/" target="_blank">
+        <img 
+            src="./assets/fb_logo.png" 
+            alt="Facebook Logo"
+        >
+    </a>
+
+    <br>
+    <br>
+
+    <!-- ! TABELE primeri -->
+
+    <h1>Primeri Tabela:</h1>
+
+    <table width="50%" border="1" bgcolor="lightgreen">
+        <tr bgcolor="yellow">
+            <td>
+                Ime
+            </td>
+            <td>
+                Prezime
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Nikola
+            </td>
+            <td>
+                Nikolić
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Sara
+            </td>
+            <td>
+                Sarić
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <!-- ! FORME -->
+
+    <h1>Forme primeri:</h1>
+
+    <form name="contact-form">
+        <label for="fullName">Full Name:</label>
+        <br>
+        <input type="text" name="fullName" id="fullName">
+        <br>
+        <label for="language">Your favourite language:</label>
+        <br>
+        <input type="text" name="language" id="language">
+        <br>
+        <label for="thoughts">Share your thoughts:</label>
+        <br>
+        <textarea name="thoughts" id="thoughts" cols="30" rows="10">
+        </textarea>
+        <br>
+        <label for="role">Select your Role:</label>
+        <br>
+        <input type="radio" name="role"> Teacher
+        <br>
+        <input type="radio" name="role"> Student
+        <br>
+        <label for="color">Choose your favourite colour:</label>
+        <br>
+        <select name="color" id="color">
+            <!-- <option value="color">Choose your color:</option> -->
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+
+    <!-- ! SPAN element -->
+
+    <p>Ovo je <span style="color: blue">plava</span> boja.</p>
+
+    <!-- ! DIV element -->
+
+    <div style="color: blue">
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus tempora aliquid cupiditate culpa perspiciatis, reprehenderit rerum sapiente voluptates tempore dolorum nulla! Excepturi neque saepe quod, corporis eligendi expedita? Blanditiis, eaque!</p>
+    </div>
+
+    <!-- ! SECTION element -->
+
+    <section style="color: blue">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam obcaecati voluptatum laudantium vitae ratione magni! Ab esse sed necessitatibus facilis quia minus debitis, fugit repudiandae ipsum, qui repellendus hic praesentium.</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum facere modi reiciendis? Reprehenderit, ut molestiae neque doloremque ipsum deserunt ratione, maiores voluptatem ea non dolore rem fugiat, sunt aperiam architecto.
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolorum dicta ducimus numquam delectus, harum impedit eveniet iusto illum rem minima, porro, sunt dolore! Atque, enim. Blanditiis ipsam voluptatibus dolore.</p>
+    </section>
+
+    <!-- ! EMBEDOVANJE videa -->
+
+    <br>
+    <br>
+    <h1>Embedovanje Videa:</h1>
+
+    <iframe 
+        width="560" height="315" src="https://www.youtube.com/embed/qZXt1Aom3Cs" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <!-- TODO - zadaci za vezbu -->
+
+        <!-- 
+            1. Napraviti novi fajl sa nazivom homework-index.html
+            2. Kreirati HTML:5 strukturu fajla
+            3. Promeniti naslov stranice u Homework
+            4. Uraditi zadatke sa slike homework_1 i homework_2
+         -->
+
+
+        <!-- ? Link do HTML dokumentacije: https://www.w3schools.com/html/ -->
+
+</body>
+</html>
